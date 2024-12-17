@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         itemCount: _list.length,
         itemBuilder: (context, index) {
           return ListTile(
-            leading: Image.network("https://corsproxy.io/?"+_list[index].MAIN_IMG),
+            leading: Image.network(_list[index].MAIN_IMG),
             title: Text(_list[index].TITLE),
             subtitle: Text(_list[index].STRTDATE + "~" + _list[index].END_DATE),
             trailing: Chip(label: Text(_list[index].IS_FREE)),
